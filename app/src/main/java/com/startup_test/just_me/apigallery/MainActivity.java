@@ -2,34 +2,9 @@ package com.startup_test.just_me.apigallery;
 
 import android.app.Activity;
 import android.app.FragmentTransaction;
-import android.graphics.Bitmap;
 import android.os.Bundle;
-import android.util.Log;
-import android.view.View;
-import android.widget.Button;
-import android.widget.Toast;
 
-import com.android.volley.AuthFailureError;
-import com.android.volley.NetworkResponse;
-import com.android.volley.Request;
-import com.android.volley.RequestQueue;
-import com.android.volley.Response;
-import com.android.volley.VolleyError;
-import com.android.volley.toolbox.HttpHeaderParser;
-import com.android.volley.toolbox.JsonObjectRequest;
-import com.android.volley.toolbox.Volley;
-
-import org.json.JSONArray;
-import org.json.JSONException;
-import org.json.JSONObject;
-
-import java.util.ArrayList;
-import java.util.Map;
-
-import butterknife.BindView;
 import butterknife.ButterKnife;
-import butterknife.OnClick;
-import butterknife.Optional;
 
 /**
  * Created by just_me on 29.07.16.
@@ -61,7 +36,8 @@ public class MainActivity extends Activity {
 
         // set fragment inside activity
         FragmentTransaction fragmentTransaction = getFragmentManager().beginTransaction();
-        fragmentTransaction.replace(R.id.container,gallery)
+        fragmentTransaction.setCustomAnimations(R.animator.enter, R.animator.exit);
+        fragmentTransaction.replace(R.id.container, gallery)
                 .addToBackStack(null)
                 .commit();
     }

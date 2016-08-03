@@ -116,8 +116,7 @@ public class LoadingFragment extends Fragment {
                     for (int i = 0; i < imagesInfo.length(); i++) {
                         addLogInfo((String) ((JSONObject) imagesInfo.get(i)).get("title"));
                     }
-                    progressBar.setMax(100);
-                    progressBar.setProgress(100);
+                    progressBar.setEnabled(false);
                     goToGalleryButton.setVisibility(View.VISIBLE);
                 } catch (JSONException e) {
                     e.printStackTrace();
