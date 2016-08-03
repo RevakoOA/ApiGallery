@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:lib="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.lsjwzh.widget.materialloadingprogressbar.CircleProgressBar
+        android:id="@+id/progressBar"
+
+        app:mlpb_show_arrow="false"
+        app:mlpb_arrow_height="10dp"
+        app:mlpb_arrow_width="40dp"
+        app:mlpb_enable_circle_background="true"
+
+        app:mlpb_progress_stoke_width="50dp"
+        app:mlpb_progress_text_visibility="visible"
+        android:layout_height="200dp"
+        android:layout_width="200dp"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@+id/space" />
+
+    <Space
+        android:layout_width="20px"
+        android:layout_height="20px"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/space" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Large Text"
+        android:id="@+id/infoLog"
+        android:layout_below="@+id/space"
+        android:gravity="center"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@+id/goToGallery" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Go to gallery"
+        android:id="@+id/goToGallery"
+        android:visibility="invisible"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+</RelativeLayout>

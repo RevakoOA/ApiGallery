@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">APIgallery</string>
+    <string name="server_url">http://testapi.us</string>
+    <string name="login_url">/api/login</string>
+    <string name="list_url">/api/gallery/list</string>
+    <string name="item_base_url">/api/gallery/</string> <!--Require to add <id> at the end-->
+
+    <string name="images_count">images_count</string>
+    <string name="images_urls">images_urls</string>
+    <string name="userID">userID</string>
+</resources>
